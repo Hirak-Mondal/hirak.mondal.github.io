@@ -54,40 +54,150 @@
 
 <section class="reveal">
   <h2>Technical Skills</h2>
-  <div class="skills">
-    <span>Java</span>
-    <span>Python</span>
-    <span>PHP</span>
-    <span>C++</span>
-    <span>Kafka</span>
-    <span>Redis</span>
-    <span>AWS</span>
-    <span>Fluent Bit</span>
-    <span>OpenSearch</span>
-    <span>Grafana</span>
+
+  <div class="card skills-grid">
+
+    <div class="skill-group">
+      <h3>Languages</h3>
+      <div class="skill-badges">
+        <span class="skill-badge primary">Java</span>
+        <span class="skill-badge primary">Python</span>
+        <span class="skill-badge">PHP</span>
+        <span class="skill-badge">C++</span>
+        <span class="skill-badge">SQL</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Backend & Messaging</h3>
+      <div class="skill-badges">
+        <span class="skill-badge primary">Kafka</span>
+        <span class="skill-badge primary">Redis</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Cloud & Infrastructure</h3>
+      <div class="skill-badges">
+        <span class="skill-badge primary">AWS S3</span>
+        <span class="skill-badge primary">EC2</span>
+        <span class="skill-badge">EventBridge</span>
+        <span class="skill-badge">Localstack</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Observability</h3>
+      <div class="skill-badges">
+        <span class="skill-badge primary">Fluent Bit</span>
+        <span class="skill-badge">FluentD</span>
+        <span class="skill-badge">Logstash</span>
+        <span class="skill-badge primary">OpenSearch</span>
+        <span class="skill-badge primary">Grafana</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Testing & Quality</h3>
+      <div class="skill-badges">
+        <span class="skill-badge">JUnit</span>
+        <span class="skill-badge">Mockito</span>
+        <span class="skill-badge primary">SonarQube</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h3>Tools</h3>
+      <div class="skill-badges">
+        <span class="skill-badge primary">Git</span>
+        <span class="skill-badge">Postman</span>
+        <span class="skill-badge">IntelliJ IDEA</span>
+        <span class="skill-badge">VS Code</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section class="reveal">
   <h2>Experience</h2>
 
+  <!-- PayU - Software Engineer -->
   <div class="card">
-    <h3>PayU Payments — Software Engineer</h3>
-    <span>Apr 2025 – Present</span>
+    <h3>Software Engineer — PayU Payments Pvt. Ltd.</h3>
+    <span>Bengaluru, India | Apr 2025 – Present</span>
     <ul>
-      <li>Designed OLW & CLW wallet payment flows across platforms.</li>
-      <li>Built AES–RSA encryption framework for 10+ services.</li>
-      <li>Reduced incident response time by 40% via observability.</li>
+      <li>
+        Owned end-to-end design and delivery of <strong>Open Loop Wallet (OLW)</strong> and
+        <strong>Closed Loop Wallet (CLW)</strong> payment flows across
+        <strong>3+ platforms</strong> in a <strong>microservices-based architecture</strong>,
+        collaborating with <strong>iOS, Android, and Web</strong> teams and
+        <strong>multiple banking partners</strong> using <strong>Java</strong> and <strong>PHP</strong>.
+      </li>
+      <li>
+        Engineered a reusable <strong>AES–RSA hybrid encryption framework</strong> with
+        <strong>Base64 encoding</strong>, securing sensitive payloads
+        <strong>in transit and at rest</strong> across <strong>10+ internal services</strong>.
+      </li>
+      <li>
+        Automated secure bank data ingestion pipelines using <strong>Python</strong>,
+        processing <strong>password-protected ZIPs</strong> and
+        <strong>cell-level encrypted Excel/CSV</strong> files, improving efficiency by
+        <strong>60%</strong>.
+      </li>
+      <li>
+        Built <strong>Grafana-based observability dashboards</strong> for
+        <strong>10+ microservices</strong>, monitoring API throughput, CPU, and memory,
+        reducing incident detection and response time by <strong>40%</strong>.
+      </li>
     </ul>
   </div>
 
+  <!-- PayU - Associate Software Engineer -->
   <div class="card">
-    <h3>PayU Payments — Associate Software Engineer</h3>
+    <h3>Associate Software Engineer — PayU Payments Pvt. Ltd.</h3>
     <span>Jul 2023 – Apr 2025</span>
     <ul>
-      <li>Reduced logging infrastructure cost by 80–90%.</li>
-      <li>Improved log retrieval efficiency by 60–70%.</li>
-      <li>A+ SonarQube security rating.</li>
+      <li>
+        Enhanced an <strong>org-wide distributed logging pipeline</strong>
+        (<strong>Fluent Bit → Kafka → FluentD → S3 → OpenSearch</strong>),
+        reducing infrastructure and operational costs by <strong>80–90%</strong>.
+      </li>
+      <li>
+        Optimized archived log indexing and retrieval from <strong>Amazon S3</strong>,
+        improving search efficiency by <strong>60–70%</strong>.
+      </li>
+      <li>
+        Migrated legacy <strong>cron-based workflows</strong> to
+        <strong>Dolphin Scheduler</strong>, extending <strong>RBAC</strong> with a custom
+        <strong>“Maintainer”</strong> role.
+      </li>
+      <li>
+        Customized <strong>Dolphin Scheduler UI</strong> and integrated
+        <strong>Hub-based authentication</strong>, improving security and UX.
+      </li>
+      <li>
+        Improved code quality by increasing <strong>SonarQube coverage to 90%+</strong>,
+        achieving an <strong>A+ security rating</strong>.
+      </li>
+    </ul>
+  </div>
+
+  <!-- PayU - Intern -->
+  <div class="card">
+    <h3>Software Engineer Intern — PayU Payments Pvt. Ltd.</h3>
+    <span>Jan 2023 – Jun 2023</span>
+    <ul>
+      <li>
+        Modernized the org-wide logging pipeline by migrating from
+        <strong>Logstash</strong> to
+        <strong>Fluent Bit → FluentD → Kafka</strong>, reducing resource usage and
+        improving ingestion performance.
+      </li>
+      <li>
+        Contributed to a <strong>scalable</strong> and <strong>cost-efficient</strong>
+        centralized logging system supporting multiple production services.
+      </li>
     </ul>
   </div>
 </section>
