@@ -1,11 +1,18 @@
 // THEME TOGGLE
 const toggle = document.getElementById("theme-toggle");
+
 toggle.onclick = () => {
   document.body.classList.toggle("light");
-  toggle.innerHTML = document.body.classList.contains("light")
-    ? '<i class="fas fa-moon"></i>'
-    : '<i class="fas fa-sun"></i>';
+  toggle.textContent = document.body.classList.contains("light")
+    ? "🌙 Dark Mode"
+    : "☀️ Light Mode";
 };
+
+// CONTACT SCROLL
+function scrollToContact() {
+  document.getElementById("contact")
+    .scrollIntoView({ behavior: "smooth" });
+}
 
 // SCROLL REVEAL
 const reveals = document.querySelectorAll(".reveal");
