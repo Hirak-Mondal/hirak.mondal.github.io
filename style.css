@@ -109,6 +109,15 @@ h2 {
   box-shadow:
     0 6px 20px rgba(0, 0, 0, 0.04); /* subtle in light, invisible in dark */
 }
+/* Card Subheadings (Responsibilities / Impact) */
+.card h4 {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 
 .meta {
   display: block;
