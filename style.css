@@ -82,9 +82,10 @@ body {
 }
 
 .hero-links svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;          /* slightly larger, better balance */
+  height: 18px;
   opacity: 0.9;
+  vertical-align: middle;
 }
 
 .resume-btn {
